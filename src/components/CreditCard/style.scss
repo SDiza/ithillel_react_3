@@ -1,0 +1,61 @@
+
+.CreditCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    &__form {
+        width: 560px;
+        height: 350px;
+        border-radius: 10px;
+        background: url('./img/card.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    &__number {
+        position: absolute;
+        left: 12%;
+        bottom: 38%;
+    }
+    &__input {
+        font-family: 'OCR-a';
+        width: 80px;
+        font-size: 30px;
+        color: white;
+        padding: 3px 10px;
+        margin-right: 5px;
+        border: 1px solid #858585;
+        border-radius: 4px;
+        background-color: #141414;
+        -moz-appearance: textfield;
+        &:hover,
+        &:focus {
+            outline-color: #858585;
+        }
+
+    }
+    &__button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -15%;
+        font-size: 30px;
+        font-family: 'OCR-a';
+        color: #fff;
+        border: 1px solid #858585;
+        border-radius: 4px;
+        background-color: #141414;
+        transition: 150ms;
+        &:hover,
+        &:focus {
+            background-color: #858585;
+            outline: none;
+        }
+        &:active {
+            background-color: #dddddd;
+            outline: none;
+        }
+    }
+}
